@@ -1,5 +1,6 @@
 package com.zahra.feetrackerapp.utils;
 
+import com.zahra.feetrackerapp.Register.RegisterPojoModel;
 import com.zahra.feetrackerapp.login.LoginPojoModel;
 
 import retrofit2.Call;
@@ -14,6 +15,14 @@ public interface WebInterface {
     Call<LoginPojoModel> login(
             @Field("username") String username,
             @Field("password") String password
+    );
+
+    @FormUrlEncoded
+    @POST("webservice/register")
+    Call<RegisterPojoModel> register(
+            @Field("username") String username,
+            @Field("password") String password,
+            @Field("email") String email
     );
 
 }

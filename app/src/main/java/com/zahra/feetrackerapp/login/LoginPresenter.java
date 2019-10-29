@@ -18,12 +18,21 @@ public class LoginPresenter implements LoginContract.Presenter {
 
     @Override
     public void onLoginSuccess(LoginPojoModel model) {
-        view.onLoginSuccess(model.getMessage());
+        view.showLoginResult(model.getMessage());
+        if (model.getStatus() == "ok"){
+            //#TODO: save Token in hawk
+            //#TODO: open queryPriceActivity
+        }
     }
 
     @Override
     public void onLoginFailure() {
-        view.onLoginFailure("Cannot check you authority right now!");
+        view.showLoginResult("Cannot check you authority right now!");
 
+    }
+
+    @Override
+    public void goToRegister() {
+        view.goToRegister();
     }
 }

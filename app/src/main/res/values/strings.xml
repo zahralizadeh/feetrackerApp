@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FeetrackerApp</string>
+    <string name="ActivatinLink">An Activation Code has sent to your email. Please check your mail box and active your acount by clicking the activation code!</string>
 </resources>
