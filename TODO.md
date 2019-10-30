@@ -7,19 +7,17 @@
 - [x] MVP structure
 - [x] login with retrofit
 - [x] layout improvements
-- [ ] link to register activity
-- [ ] link to register forgot password activity
+- [x] link to register activity
+- [ ] link to forgot password activity
 - [ ] find suitable background
-- [ ] save token with hawk
+- [x] save token with hawk
 
 # register
-- [ ] MVP structure
-- [ ] login with retrofit
-- [ ] layout improvements
-- [ ] link to login activity
-- [ ] link to register forgot password activity
+- [x] MVP structure
+- [x] register with retrofit
+- [x] layout improvements
+- [x] link to login activity
 - [ ] find suitable background
-- [ ] save token with hawk
 
 # ask price
 - [ ] design form. amazing design

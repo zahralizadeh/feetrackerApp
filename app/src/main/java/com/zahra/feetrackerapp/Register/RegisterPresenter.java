@@ -33,9 +33,7 @@ public class RegisterPresenter implements RegisterContract.Presenter {
 
         if (model.getStatus().equals("ok")) {
             Log.d(TAG, "onResponseSuccess: "+model.getStatus());
-            view.showMessageDialog(R.string.ActivatinLink);
-            //#todo: WHY IT DOES NOT WAIT FOR PRESS OK???
-            view.goToLogin();
+            view.showMessageDialog(R.string.ActivatingLink);
         }
     }
 

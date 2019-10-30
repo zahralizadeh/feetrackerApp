@@ -1,6 +1,8 @@
 package com.zahra.feetrackerapp.login;
 
 
+import com.orhanobut.hawk.Hawk;
+
 public class LoginPresenter implements LoginContract.Presenter {
     private LoginContract.View view;
     LoginModel model = new LoginModel();
@@ -20,7 +22,7 @@ public class LoginPresenter implements LoginContract.Presenter {
     public void onLoginSuccess(LoginPojoModel model) {
         view.showLoginResult(model.getMessage());
         if (model.getStatus() == "ok"){
-            //#TODO: save Token in hawk
+            Hawk.put("token",model.getToken());
             //#TODO: open queryPriceActivity
         }
     }

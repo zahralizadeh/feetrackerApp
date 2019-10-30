@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.TextView;
 
@@ -59,12 +60,14 @@ public class RegisterActivity extends AppCompatActivity implements RegisterContr
     @Override
     public void showMessageDialog(int msg) {
         final AlertDialog msgDialog = new AlertDialog.Builder(this).create();
-        msgDialog.setTitle("Alert");
-        msgDialog.setMessage(getString(msg));
-        msgDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK", new DialogInterface.OnClickListener() {
+//        final AlertDialog msgDialog = new AlertDialog.Builder(new ContextThemeWrapper
+//                (RegisterActivity.this, R.style.AlertDialogCustom)).create();
+        msgDialog.setMessage(getString(msg) + "OK");
+        msgDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "GOT IT!", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 msgDialog.dismiss();
+                goToLogin();
             }
         });
         msgDialog.show();
