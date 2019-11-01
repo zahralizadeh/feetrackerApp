@@ -1,6 +1,6 @@
 # main activity(splash screen)
-- [ ] find suitable background
-- [ ] code splash
+- [x] find suitable background
+- [x] code splash
 
 
 # login
@@ -8,8 +8,8 @@
 - [x] login with retrofit
 - [x] layout improvements
 - [x] link to register activity
-- [ ] link to forgot password activity
-- [ ] find suitable background
+- [x] link to forgot password activity
+- [x] find suitable background
 - [x] save token with hawk
 
 # register
@@ -27,12 +27,12 @@
 - [ ] response handler
 
 # Design
-- [ ] select a pallet
-- [ ] find some sample
-- [ ] round corner boxes
-- [ ] backgrounds
+- [x] select a pallet
+- [x] find some sample
+- [x] round corner boxes
+- [x] backgrounds
 - [ ] LOGO
-- [ ] Persian font
+- [x] Persian font
 - [ ] Persian statements on String
 
 # instruction

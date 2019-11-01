@@ -7,4 +7,9 @@
     <string name="default_room">1</string>
     <string name="default_area">70</string>
     <string name="app_name_fa">فیجو</string>
+    <string name="forget_password">رمز عبورت رو فراموش کردی؟</string>
+    <string name="signup">حساب کاربری نداری؟</string>
+    <string name="welcome">سلام!</string>
+    <string name="login_is_required">برای ادامه باید وارد حساب کاربریت بشی..</string>
+    <string name="login">ورود به فیجو</string>
 </resources>
