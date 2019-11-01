@@ -12,4 +12,7 @@
     <string name="welcome">سلام!</string>
     <string name="login_is_required">برای ادامه باید وارد حساب کاربریت بشی..</string>
     <string name="login">ورود به فیجو</string>
+    <string name="already_have_account">از قبل حساب کاربری داشتی؟</string>
+    <string name="register_statement">یک دقیقه ای حساب کاربری بساز..</string>
+    <string name="register">ثبت نام</string>
 </resources>

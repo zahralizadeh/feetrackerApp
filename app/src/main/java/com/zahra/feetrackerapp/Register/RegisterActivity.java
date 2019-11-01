@@ -14,7 +14,7 @@ import com.zahra.feetrackerapp.PublicMethods;
 import com.zahra.feetrackerapp.R;
 import com.zahra.feetrackerapp.login.LoginActivity;
 import com.zahra.feetrackerapp.utils.views.myEditText;
-import com.zahra.feetrackerapp.utils.views.myRegularText;
+import com.zahra.feetrackerapp.utils.views.myTextView;
 
 public class RegisterActivity extends AppCompatActivity implements RegisterContract.View {
     RegisterPresenter presenter = new RegisterPresenter();
@@ -36,7 +36,7 @@ public class RegisterActivity extends AppCompatActivity implements RegisterContr
         final myEditText username = findViewById(R.id.username);
         final myEditText password = findViewById(R.id.password);
         final myEditText email = findViewById(R.id.email);
-        myRegularText register = findViewById(R.id.register);
+        myTextView register = findViewById(R.id.register);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
