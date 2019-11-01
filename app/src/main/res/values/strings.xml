@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">FeetrackerApp</string>
     <string name="ActivatingLink">An Activation Code has sent to your email. Please check your mail box and active your acount by clicking the activation code!</string>
+    <string name="rooms">تعداد اتاق</string>
+    <string name="age">سن بنا</string>
+    <string name="area">متراژ</string>
+    <string name="default_room">1</string>
+    <string name="default_area">70</string>
+    <string name="app_name_fa">فیجو</string>
 </resources>

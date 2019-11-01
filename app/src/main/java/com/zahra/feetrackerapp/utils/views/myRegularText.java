@@ -23,8 +23,6 @@ public class myRegularText extends AppCompatTextView {
 
     private void init() {
         if (!isInEditMode()) {
-            // Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "Lato-Light.ttf");
-            //setTypeface(tf);
             this.setTypeface(MyApplication.appFace_regular);
         }
     }
