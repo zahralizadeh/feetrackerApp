@@ -15,4 +15,11 @@
     <string name="already_have_account">از قبل حساب کاربری داشتی؟</string>
     <string name="register_statement">یک دقیقه ای حساب کاربری بساز..</string>
     <string name="register">ثبت نام</string>
+    <string name="query_price_title">دنبال چی می گردی؟</string>
+    <string name="go_price">پیدا کن</string>
+    <string name="radio_sale">خرید / فروش</string>
+    <string name="radio_rent">رهن / اجاره</string>
+    <string name="propertytype_title">نوع ملک</string>
+    <string name="location_title">منطقه مورد نظر</string>
+    <string name="default_age">1</string>
 </resources>
