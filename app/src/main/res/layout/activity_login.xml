@@ -38,7 +38,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight=".5" />
 
     <com.zahra.feetrackerapp.utils.views.myEditText
         android:id="@+id/username"
@@ -48,10 +48,11 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
-        android:layout_weight="1.5"
+        android:layout_weight="1.6"
         android:background="@drawable/txtboxformat"
         android:drawableLeft="@drawable/email"
         android:drawablePadding="16dp"
+        android:gravity="center_vertical"
         android:hint="Username / E-mail"
         android:inputType="text"
         android:padding="12dp"
@@ -65,10 +66,11 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
-        android:layout_weight="1.5"
+        android:layout_weight="1.6"
         android:background="@drawable/txtboxformat"
         android:drawableLeft="@drawable/lockers"
         android:drawablePadding="16dp"
+        android:gravity="center_vertical"
         android:hint="Password"
         android:inputType="textPassword"
         android:padding="12dp"

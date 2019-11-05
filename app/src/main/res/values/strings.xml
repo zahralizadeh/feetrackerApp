@@ -22,4 +22,5 @@
     <string name="propertytype_title">نوع ملک</string>
     <string name="location_title">منطقه مورد نظر</string>
     <string name="default_age">1</string>
+    <string name="server_error">برقراری ارتباط با سرور مقدور نیست!</string>
 </resources>

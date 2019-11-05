@@ -10,8 +10,8 @@ import android.widget.TextView;
 import com.zahra.feetrackerapp.PublicMethods;
 import com.zahra.feetrackerapp.R;
 import com.zahra.feetrackerapp.Register.RegisterActivity;
+import com.zahra.feetrackerapp.queryprice.QueryPriceActivity;
 import com.zahra.feetrackerapp.utils.views.myEditText;
-import com.zahra.feetrackerapp.utils.views.myRegularText;
 import com.zahra.feetrackerapp.utils.views.myTextView;
 
 public class LoginActivity extends AppCompatActivity implements LoginContract.View {
@@ -46,14 +46,27 @@ public class LoginActivity extends AppCompatActivity implements LoginContract.Vi
     }
 
     @Override
+    public void showLoginResult(int msg) {
+        PublicMethods.showToast(LoginActivity.this, getString(msg));
+        goToQuery();
+    }
+
+    @Override
     public void showLoginResult(String msg) {
         PublicMethods.showToast(LoginActivity.this, msg);
+        goToQuery();
     }
 
 
     @Override
     public void goToRegister() {
         Intent destination = new Intent(LoginActivity.this, RegisterActivity.class);
+        LoginActivity.this.startActivity(destination);
+    }
+
+    @Override
+    public void goToQuery() {
+        Intent destination = new Intent(LoginActivity.this, QueryPriceActivity.class);
         LoginActivity.this.startActivity(destination);
     }
 }

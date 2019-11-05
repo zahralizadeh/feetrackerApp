@@ -2,6 +2,7 @@ package com.zahra.feetrackerapp.login;
 
 
 import com.orhanobut.hawk.Hawk;
+import com.zahra.feetrackerapp.R;
 
 public class LoginPresenter implements LoginContract.Presenter {
     private LoginContract.View view;
@@ -21,15 +22,15 @@ public class LoginPresenter implements LoginContract.Presenter {
     @Override
     public void onLoginSuccess(LoginPojoModel model) {
         view.showLoginResult(model.getMessage());
-        if (model.getStatus() == "ok"){
-            Hawk.put("token",model.getToken());
-            //#TODO: open queryPriceActivity
+        if (model.getStatus().equals("ok")) {
+            Hawk.put("token", model.getToken());
+            view.goToQuery();
         }
     }
 
     @Override
     public void onLoginFailure() {
-        view.showLoginResult("Cannot check you authority right now!");
+        view.showLoginResult(R.string.server_error);
 
     }
 

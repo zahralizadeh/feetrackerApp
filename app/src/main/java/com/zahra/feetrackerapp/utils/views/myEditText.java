@@ -11,11 +11,12 @@ import androidx.appcompat.widget.AppCompatEditText;
 public class myEditText extends AppCompatEditText {
 
     public myEditText(Context context) {
-        super(context);
+        super(context); init();
     }
 
     public myEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init();
     }
 
     public String text() {
@@ -24,8 +25,6 @@ public class myEditText extends AppCompatEditText {
 
     private void init() {
         if (!isInEditMode()) {
-           // Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "Lato-Light.ttf");
-            //setTypeface(tf);
             this.setTypeface(MyApplication.appFace_light);
         }
     }

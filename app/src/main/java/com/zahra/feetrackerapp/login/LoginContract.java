@@ -2,8 +2,10 @@ package com.zahra.feetrackerapp.login;
 
 public interface LoginContract {
     interface View{
+        void showLoginResult(int msg);
         void showLoginResult(String msg);
         void goToRegister();
+        void goToQuery();
 
     }
     interface Presenter{
